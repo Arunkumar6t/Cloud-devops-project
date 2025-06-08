@@ -32,4 +32,4 @@ terraform apply
 ```
 
 Add your AWS credentials and DockerHub secrets in GitHub before running CI/CD.
-"Triggered the first CI/CD run 🚀"
+"Triggered the first CI/CD run "
