@@ -13,7 +13,7 @@ resource "aws_instance" "devops_app" {
       "sudo yum install docker -y",
       "sudo systemctl start docker",
       "sudo usermod -aG docker ec2-user",
-      "docker run -d -p 80:8080 yourdockerhub/java-devops-app"
+      "docker run -d -p 80:8080 arunkumar6t/java-devops-app"
     ]
 
     connection {
