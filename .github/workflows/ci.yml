@@ -21,10 +21,13 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file app/pom.xml
 
-    - name: Build Docker image
-      run: docker build -t yourdockerhub/java-devops-app ./app
+    - name: docker build -t arunkumar6t/java-devops-app ./app
+      run: docker push arunkumar6t/java-devops-app
 
     - name: Push Docker image
       run: |
         echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
         docker push yourdockerhub/java-devops-app
+
+    
+
